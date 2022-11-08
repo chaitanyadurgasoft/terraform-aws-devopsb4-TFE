@@ -1,5 +1,5 @@
 module "prod_vpc" {
-  source       = "../main/network"
+    source  = "app.terraform.io/Terraform-Devops-B4/devopsb4-network/aws"
   vpc_cidr     = "10.185.0.0/16"
   vpc_name     = "prod_cgit-vpc"
   environment  = "prod"

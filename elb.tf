@@ -1,5 +1,5 @@
 module "prod_elb" {
-  source         = "../main/elb"
+    source  = "app.terraform.io/Terraform-Devops-B4/devopsb4-elb/aws"
   nlbname        = "prod-nlb"
   subnets        = module.prod_vpc.PublicSubnet
   env            = module.prod_vpc.environment

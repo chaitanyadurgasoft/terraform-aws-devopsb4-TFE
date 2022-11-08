@@ -1,5 +1,5 @@
 module "prod_ec2" {
-  source      = "../main/ec2"
+    source  = "app.terraform.io/Terraform-Devops-B4/devopsb4-compute/aws"
   environment = module.prod_vpc.environment
   amis = {
     "us-east-1"  = "ami-08c40ec9ead489470"
